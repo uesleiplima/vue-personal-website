@@ -1,0 +1,27 @@
+.container-image-profile {
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
+  .image-profile {
+    width: 100%;
+    height: 100%;
+  }
+
+  .locale-flag {
+    margin-right: 0.5em;
+  }
+
+  .gradient {
+    background: linear-gradient(30deg, #FFFFFF 0%,#2196F3 30%,#0D47A1 70%,#FFFFFF 100%);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+      0%{background-position:0% 0}
+      50%{background-position:100% 0}
+      100%{background-position:0% 0}
+  }

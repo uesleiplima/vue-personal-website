@@ -9,8 +9,8 @@
           slot="activator"
           flat
         >
-          <img :src="localeSelected.flag">
-          <v-icon>mdi-arrow-down</v-icon>
+          <img :src="localeSelected.flag" class="locale-flag">
+          <v-icon small>mdi-arrow-down</v-icon>
         </v-btn>
 
         <v-list>
@@ -73,28 +73,4 @@ export default {
 }
 </script>
 
-<style scoped>
-  .container-image-profile {
-    width: 10em;
-    height: 10em;
-    margin: 0 auto;
-    margin-bottom: 2em;
-  }
-
-  .image-profile {
-    width: 100%;
-    height: 100%;
-  }
-
-  .gradient {
-    background: linear-gradient(30deg, #FFFFFF 0%,#2196F3 30%,#0D47A1 70%,#FFFFFF 100%);
-    background-size: 500% 500%;
-    animation: gradient 15s ease infinite;
-  }
-
-  @keyframes gradient {
-      0%{background-position:0% 0}
-      50%{background-position:100% 0}
-      100%{background-position:0% 0}
-  }
-</style>
+<style scoped src="@/assets/css/components/fixed-informations.css" />
