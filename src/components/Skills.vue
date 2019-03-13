@@ -2,8 +2,8 @@
   <v-card flat>
     <v-card-text>
       <h1>Skills</h1>
-      <v-layout>
-        <v-flex xs2 v-for="skill in skills" :key="skill.name">
+      <v-layout row wrap>
+        <v-flex xs2 v-for="skill in skills" :key="skill.name" pa-2>
           <v-hover>
             <v-card
               slot-scope="{ hover }"
@@ -39,7 +39,7 @@ export default {
       skills: [
         {
           name: 'Vue.js',
-          logo: require('@/assets/logo.png')
+          logo: require('@/assets/vue.png')
         },
         {
           name: 'React',
